@@ -1,0 +1,12 @@
+set editing-mode vi
+set keymap vi
+set show-mode-in-prompt on
+set vi-ins-mode-string "\1\e[32m\2[I]\1\e[0m\2"
+set vi-cmd-mode-string "\1\e[31m\2[N]\1\e[0m\2"
+set keymap vi-insert
+Control-l: clear-screen
+set keymap vi-command
+Control-l: clear-screen
+set keymap vi-insert
+"\e[A": history-search-backward  # Up arrow
+"\e[B": history-search-forward   # Down arrow

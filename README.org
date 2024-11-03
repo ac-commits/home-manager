@@ -1,0 +1,3 @@
+#+begin_src bash
+git clone https://github.com/itrekr/home-manager ~/.config/home-manager
+#+end_src
