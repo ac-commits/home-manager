@@ -23,6 +23,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Set wallpaper
+exec --no-startup-id feh --bg-scale ~/.config/i3/wall.png
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -39,7 +42,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 floating_modifier $mod
 
 # Alternating layout (external script required)
-exec --no-startup-id python3 /home/oscar/Files/Builds/alternating_layouts.py
+exec --no-startup-id python3 ~/.config/i3/alternating_layouts.py
 
 # Dockcheck (check if plugged into ThinkPad docking station and run corresponding configuration)
 exec --no-startup-id dockcheck
@@ -53,18 +56,12 @@ exec --no-startup-id nextcloud
 # Blueman applet
 exec --no-startup-id blueman-applet
 
-# Input settings (decreases input response time and maps capslock to escape)
-exec --no-startup-id setxkbmap -option caps:escape
-exec --no-startup-id xset r rate 300 30
-exec --no-startup-id setxkbmap -option compose:ralt
-
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-#bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -75,16 +72,17 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 # Polybar (aesthetic bar at the top, requires external program and configuration)
 exec_always --no-startup-id bash /home/oscar/.config/polybar/launch.sh
 
+# Firefox session bus fix
+exec --no-startup-id export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch echo $DBUS_SESSION_BUS_ADDRESS)
 
 # Custom keybindings
 bindsym $mod+Shift+c exec i3-msg reload
 bindsym $mod+Shift+r exec i3-msg restart
 bindsym $mod+e exec emacsclient -c
 bindsym $mod+shift+control+e exec killall emacs && emacs --bg-daemon
-bindsym $mod+b exec firefox -P "default-release" -new-window
-bindsym $mod+i exec firefox -P "default-release" --private-window
+bindsym $mod+b exec firefox -P "default" -new-window
 bindsym $mod+shift+b exec firefox -P "Hacker" -new-window
-bindsym $mod+m exec spotify-launcher
+bindsym $mod+m exec spotify
 bindsym $mod+shift+m exec /bin/rofi-radio
 bindsym $mod+control+shift+m exec /bin/rofi-radio-draupnir
 #bindsym $mod+n exec journal

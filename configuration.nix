@@ -13,6 +13,11 @@
   networking.hostName = "sleipnir";
   networking.networkmanager.enable = true; # Enable NetworkManager for easy network management
 
+  # Bluetooth setup
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -35,8 +40,8 @@
   services.xserver = {
     enable = true;
     xkb.layout = "us";
-    xkbOptions = "caps:escape";
-    autoRepeatDelay = 250;
+    xkb.options = "caps:escape,compose:ralt";
+    autoRepeatDelay = 300;
     autoRepeatInterval = 30;
     displayManager.lightdm.enable = true;
     windowManager.i3.enable = true;
