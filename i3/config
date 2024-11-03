@@ -45,7 +45,7 @@ exec --no-startup-id python3 /home/oscar/Files/Builds/alternating_layouts.py
 exec --no-startup-id dockcheck
 
 # Emacs daemon
-exec --no-startup-id emacs --bg-daemon
+exec --no-startup-id emacs-29.4 --bg-daemon
 
 # Nextcloud
 exec --no-startup-id nextcloud

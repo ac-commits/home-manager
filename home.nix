@@ -81,5 +81,6 @@
     networkmanager
     libreoffice
     gnome-keyring
+    noto-fonts
   ];
 }
