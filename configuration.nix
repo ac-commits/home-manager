@@ -18,6 +18,10 @@
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
 
+  # Pulseaudio setup
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.support32Bit = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -50,7 +54,7 @@
   # Define users
   users.users.oscar = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
   };
 
   # System packages

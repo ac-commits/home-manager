@@ -136,6 +136,7 @@ in
     direnv
     nix-direnv
     pulseaudio
+    pavucontrol
     nextcloud-client
     emacs-all-the-icons-fonts
     fzf
