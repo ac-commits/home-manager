@@ -1,3 +1,4 @@
+
 [colors]
 draw_bold_text_with_bright_colors = false
 
@@ -37,6 +38,7 @@ shape = "Block"
 log_level = "OFF"
 persistent_logging = false
 print_events = false
+#ref_test = false
 render_timer = false
 
 [env]
@@ -370,6 +372,12 @@ hide_when_typing = true
 action = "PasteSelection"
 mouse = "Middle"
 
+#[mouse.double_click]
+#threshold = 300
+
+#[mouse.triple_click]
+#threshold = 300
+
 [scrolling]
 history = 10000
 multiplier = 3
@@ -378,7 +386,7 @@ multiplier = 3
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[shell]
+[terminal.shell]
 program = "/run/current-system/sw/bin/bash"
 
 [window]
@@ -393,3 +401,9 @@ lines = 80
 [window.padding]
 x = 10
 y = 10
+
+[general]
+#custom_cursor_colors = true
+live_config_reload = true
+
+[terminal]
