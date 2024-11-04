@@ -92,7 +92,7 @@ bindsym $mod+c exec emacsgpt
 bindsym $mod+o exec gnome-terminal -e ranger
 bindsym $mod+shift+o exec chromium --profile-directory="ORUI" --app=http://127.0.0.1:35901
 bindsym $mod+x exec sleep 5 && xset dpms force off
-bindsym $mod+shift+x exec lockscreen
+bindsym $mod+shift+x exec bash -c '~/.config/i3/lockscreen.sh'
 bindsym $mod+control+shift+x exec shutdown now
 #bindsym $mod+s workspace 6; exec bash -c 'pgrep -x signal-desktop || signal-desktop'
 bindsym $mod+shift+s exec flameshot gui -s -c

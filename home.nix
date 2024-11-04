@@ -23,20 +23,8 @@ in
     package = pkgs.firefox;
     policies = {
       ExtensionSettings = {
-        "addons-search-detection@mozilla.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addons-search-detection/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "bing@search.mozilla.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bing/latest.xpi";
-          installation_mode = "force_installed";
-        };
         "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "magnolia_limited_permissions@12.34" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bypass-paywalls-clean/latest.xpi";
           installation_mode = "force_installed";
         };
         "addon@darkreader.org" = {
@@ -47,32 +35,12 @@ in
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/df-youtube/latest.xpi";
           installation_mode = "force_installed";
         };
-        "ddg@search.mozilla.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "ebay@search.mozilla.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ebay/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "google@search.mozilla.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/google/latest.xpi";
-          installation_mode = "force_installed";
-        };
         "{9063c2e9-e07c-4c2c-9646-cfe7ca8d0498}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/old-reddit-redirect/latest.xpi";
           installation_mode = "force_installed";
         };
-        "qwant@search.mozilla.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/qwant/latest.xpi";
-          installation_mode = "force_installed";
-        };
         "jid1-xUfzOsOFlzSOXg@jetpack" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/reddit-enhancement-suite/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "{5173bfae-59df-4a20-a9dd-0ab3e8c82e36}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/sci-hub-x-now/latest.xpi";
           installation_mode = "force_installed";
         };
         "sponsorBlocker@ajay.app" = {
@@ -88,7 +56,7 @@ in
           installation_mode = "force_installed";
         };
         "zotero@chnm.gmu.edu" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/zotero-connector/latest.xpi";
+          install_url = "https://www.zotero.org/download/connector/dl?browser=firefox&version=5.0.147";
           installation_mode = "force_installed";
         };
         "{22b0eca1-8c02-4c0d-a5d7-6604ddd9836e}" = {
@@ -97,7 +65,7 @@ in
         };
         # Nicothin Space Theme
         "nicothin-space@nicothin.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/nicothin-space/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/file/4226329/nicothin_space-1.1.2.xpi";
           installation_mode = "force_installed";
         };
       };
@@ -179,5 +147,7 @@ in
     chromium
     xclip
     feh
+    imagemagick
+    scrot
   ];
 }
