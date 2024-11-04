@@ -113,6 +113,7 @@ in
   # Specify additional packages to be installed
   home.packages = with pkgs; [
     python_env
+    home-manager
     alacritty
     i3
     dunst
@@ -142,7 +143,6 @@ in
     arandr
     networkmanager
     libreoffice
-    gnome-keyring
     noto-fonts
     chromium
     xclip

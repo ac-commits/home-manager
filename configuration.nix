@@ -3,7 +3,7 @@
 {
   imports = [
     /etc/nixos/hardware-configuration.nix
-    <home-manager/nixos> # Import Home Manager
+    <home-manager/nixos>
   ];
 
   # System settings

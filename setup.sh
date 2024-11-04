@@ -1,1 +1,1 @@
-sudo ln -sf ~/.config/home-manager/configuration.nix /etc/nixos/configuration.nix && ln -s ~/.config/home-manager/fonts ~/.local/share/fonts
+sudo ln -sf ~/.config/home-manager/configuration.nix /etc/nixos/configuration.nix && mkdir -p ~/.local/share && ln -s ~/.config/home-manager/fonts ~/.local/share/fonts && sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager && sudo nix-channel --update && home-manager switch && sudo nixos-rebuild switch && sudo reboot
