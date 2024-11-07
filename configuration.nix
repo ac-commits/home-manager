@@ -62,7 +62,6 @@
     vim
     git
     home-manager
-    firefox
   ];
 
   # Enable autologin for convenience (if desired)

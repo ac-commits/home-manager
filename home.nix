@@ -14,67 +14,12 @@ in
   home.homeDirectory = "/home/oscar";
   home.stateVersion = "24.05";
 
+  imports = [
+    ./firefox.nix
+  ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # Enable Firefox
-  programs.firefox = {
-    enable = true;
-    package = pkgs.firefox;
-    policies = {
-      ExtensionSettings = {
-        "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "addon@darkreader.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "dfyoutube@example.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/df-youtube/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "{9063c2e9-e07c-4c2c-9646-cfe7ca8d0498}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/old-reddit-redirect/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "jid1-xUfzOsOFlzSOXg@jetpack" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/reddit-enhancement-suite/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "sponsorBlocker@ajay.app" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "uBlock0@raymondhill.net" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "zotero@chnm.gmu.edu" = {
-          install_url = "https://www.zotero.org/download/connector/dl?browser=firefox&version=5.0.147";
-          installation_mode = "force_installed";
-        };
-        "{22b0eca1-8c02-4c0d-a5d7-6604ddd9836e}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/dark-space-the-best-dynamic-theme/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        # Nicothin Space Theme
-        "nicothin-space@nicothin.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/file/4226329/nicothin_space-1.1.2.xpi";
-          installation_mode = "force_installed";
-        };
-      };
-      Extensions = {
-        # Set the Nicothin Space theme as the active theme
-        ActiveTheme = "nicothin-space@nicothin.com";
-      };
-    };
-  };
 
   # Configuration files and locations
   home.file = {
