@@ -19,6 +19,9 @@
   services.blueman.enable = true;
 
   # Pulseaudio setup
+  virtualisation.vmware.host.enable = true;
+
+  # Pulseaudio setup
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.support32Bit = true;
 

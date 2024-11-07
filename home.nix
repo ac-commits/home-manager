@@ -95,5 +95,6 @@ in
     feh
     imagemagick
     scrot
+    signal-desktop
   ];
 }
