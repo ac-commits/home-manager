@@ -68,7 +68,7 @@
   ];
 
   # Enable autologin for convenience (if desired)
-  services.getty.autologinUser = "oscar";
+  services.displayManager.autoLogin.user = "oscar";
 
   # Gnome keyring onzin
   services.gnome.gnome-keyring.enable = true;
