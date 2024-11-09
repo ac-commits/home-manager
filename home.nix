@@ -97,5 +97,6 @@ in
     scrot
     signal-desktop
     networkmanagerapplet
+    zotero
   ];
 }
