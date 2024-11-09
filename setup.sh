@@ -46,9 +46,6 @@ ln -sf "${SECRETS_DIR}/root_usage" "${SSH_DIR}/root_usage"
 ln -sf "${SECRETS_DIR}/openai_api_key" "$HOME/.openai_api_key"
 
 echo "Symlinks for secrets have been set up."
-echo "Setting permissions..."
-chmod 600 /home/oscar/.ssh/*
-echo "Permissions have been set."
 
 # Step 7: Rebuild NixOS and reboot
 echo "Rebuilding NixOS and rebooting..."
