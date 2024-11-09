@@ -96,5 +96,6 @@ in
     imagemagick
     scrot
     signal-desktop
+    networkmanagerapplet
   ];
 }

@@ -45,7 +45,7 @@ floating_modifier $mod
 exec --no-startup-id python3 ~/.config/i3/alternating_layouts.py
 
 # Dockcheck (check if plugged into ThinkPad docking station and run corresponding configuration)
-exec --no-startup-id dockcheck
+#exec --no-startup-id dockcheck
 
 # Emacs daemon
 exec --no-startup-id emacs-29.4 --bg-daemon
@@ -79,17 +79,17 @@ exec --no-startup-id export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch echo $DBUS_SE
 bindsym $mod+Shift+c exec i3-msg reload
 bindsym $mod+Shift+r exec i3-msg restart
 bindsym $mod+e exec emacsclient -c
-bindsym $mod+shift+control+e exec killall emacs && emacs --bg-daemon
+bindsym $mod+shift+control+e exec killall emacs-29.4 && emacs-29.4 --bg-daemon
 bindsym $mod+b exec firefox -P "default" -new-window
-bindsym $mod+shift+b exec firefox -P "Hacker" -new-window
+# bindsym $mod+shift+b exec firefox -P "Hacker" -new-window
 bindsym $mod+m exec spotify
-bindsym $mod+shift+m exec /bin/rofi-radio
-bindsym $mod+control+shift+m exec /bin/rofi-radio-draupnir
+# bindsym $mod+shift+m exec /bin/rofi-radio
+# bindsym $mod+control+shift+m exec /bin/rofi-radio-draupnir
 #bindsym $mod+n exec journal
 bindsym $mod+n exec --no-startup-id emacsclient -c -a "" -e "(progn (org-roam-dailies-goto-today) (when (featurep 'display-line-numbers) (display-line-numbers-mode -1)) (goto-char (point-max)) (unless (or (bolp) (looking-back \\\"\\n\\n\\\" nil)) (insert \\\"\\n\\\")) (insert \\\"\\n\\\") (when (fboundp 'evil-insert-state) (evil-insert-state)))"
 bindsym $mod+shift+n exec --no-startup-id emacsclient -c -a "" /home/oscar/Mimisbrunnr/Notes/Journal/journal.org
-bindsym $mod+c exec emacsgpt
-bindsym $mod+o exec gnome-terminal -e ranger
+# bindsym $mod+c exec emacsgpt
+bindsym $mod+o exec alacritty -e ranger
 bindsym $mod+shift+o exec chromium --profile-directory="ORUI" --app=http://127.0.0.1:35901
 bindsym $mod+x exec sleep 5 && xset dpms force off
 bindsym $mod+shift+x exec bash -c '~/.config/i3/lockscreen.sh'
