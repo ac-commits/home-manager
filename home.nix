@@ -62,7 +62,7 @@ in
     alacritty
     i3
     dunst
-    (polybar.override { i3Support = true; })
+    polybarFull
     ranger
     rofi
     nerdfonts

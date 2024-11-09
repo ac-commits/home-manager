@@ -18,7 +18,7 @@
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
 
-  # Pulseaudio setup
+  # VMware
   virtualisation.vmware.host.enable = true;
 
   # Pulseaudio setup
@@ -27,6 +27,13 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Flatpak support
+  xdg.portal = {
+  enable = true;
+  configPackages = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+  services.flatpak.enable = true;
 
   # Timezone and locale settings
   time.timeZone = "Europe/Amsterdam";
