@@ -45,6 +45,7 @@ alias rd='rolldice'
 alias ai='openai-cli'
 alias rfilm='ssh oscar@auga.mimisbrunnr.nl ls ~/Films | shuf | head -n 1'
 alias rserie='ssh oscar@auga.mimisbrunnr.nl ls ~/Series | shuf | head -n 1'
+alias wh='bluetoothctl connect AC:80:0A:E8:C0:F3'
 
 virtenv() {
     python3 -m venv "$PWD"
