@@ -98,5 +98,7 @@ in
     signal-desktop
     networkmanagerapplet
     zotero
+    tor-browser-bundle-bin
+    autorandr
   ];
 }
