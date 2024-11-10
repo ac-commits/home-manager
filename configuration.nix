@@ -116,6 +116,7 @@
     vim
     git
     home-manager
+    intel-gpu-tools
   ];
 
   # Enable autologin for convenience (if desired)

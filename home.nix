@@ -101,5 +101,6 @@ in
     tor-browser-bundle-bin
     autorandr
     remmina
+    brightnessctl
   ];
 }

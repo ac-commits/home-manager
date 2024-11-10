@@ -104,10 +104,10 @@ bindsym $mod+t exec chromium --profile-directory="Profile 1" --new-window https:
 bindsym $mod+shift+t exec chromium --profile-directory="Profile 2" --new-window https://teams.microsoft.com
 
 # Brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1
-bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 1
+bindsym XF86MonBrightnessDown exec brightnessctl -d intel_backlight set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl -d intel_backlight set 5%+
+bindsym Shift+XF86MonBrightnessDown exec brightnessctl -d intel_backlight set 1%+
+bindsym Shift+XF86MonBrightnessUp exec brightnessctl -d intel_backlight set 1%+
 
 # i3 aesthetics
 default_border pixel 5
