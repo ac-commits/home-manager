@@ -100,5 +100,6 @@ in
     zotero
     tor-browser-bundle-bin
     autorandr
+    remmina
   ];
 }
