@@ -102,5 +102,8 @@ in
     autorandr
     remmina
     brightnessctl
+    rubber
+    gnumake
+    texlive.combined.scheme-full
   ];
 }

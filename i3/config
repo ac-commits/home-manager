@@ -24,7 +24,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale ~/.config/i3/wall.png
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wall.png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -76,7 +76,7 @@ exec_always --no-startup-id bash /home/oscar/.config/polybar/launch.sh
 exec --no-startup-id export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch echo $DBUS_SESSION_BUS_ADDRESS)
 
 # Automatically check display setup
-exec --no-startup-id autorandr -c
+exec_always --no-startup-id autorandr -c
 
 # Custom keybindings
 bindsym $mod+Shift+c exec i3-msg reload
