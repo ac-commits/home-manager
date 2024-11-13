@@ -63,7 +63,10 @@
   services.blueman.enable = true;
 
   # VMware
-  virtualisation.vmware.host.enable = true;
+  virtualisation = {
+  vmware.host.enable = true;
+  docker.enable = true;
+  };
 
   # Pulseaudio setup
   hardware.pulseaudio.enable = true;

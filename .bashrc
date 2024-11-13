@@ -56,3 +56,4 @@ virtenv() {
 # fortune mechanicus
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
+printf '"Werde, der du bist!"\n- Nietzsche\n'

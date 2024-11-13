@@ -105,5 +105,7 @@ in
     rubber
     gnumake
     texlive.combined.scheme-full
+    mpv
+    killall
   ];
 }
