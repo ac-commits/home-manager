@@ -12,6 +12,7 @@
 
   networking.hostName = "sleipnir";
   networking.networkmanager.enable = true; # Enable NetworkManager for easy network management
+  networking.firewall.allowedUDPPorts = [ 5353 8000 ];
 
   # Laptop battery setup
   services.system76-scheduler.settings.cfsProfiles.enable = true;
@@ -22,6 +23,7 @@
       CPU_BOOST_ON_BAT = 0;
       CPU_SCALING_GOVERNOR_ON_AC = "performance";
       CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+      USB_AUTOSUSPEND = 0;
     };
   };
   services.power-profiles-daemon.enable = false;
@@ -111,7 +113,7 @@
   # Define users
   users.users.oscar = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "docker" ];
   };
 
   # System packages
@@ -120,6 +122,7 @@
     git
     home-manager
     intel-gpu-tools
+    powertop
   ];
 
   # Enable autologin for convenience (if desired)

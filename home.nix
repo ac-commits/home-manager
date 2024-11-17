@@ -107,5 +107,8 @@ in
     texlive.combined.scheme-full
     mpv
     killall
+    burpsuite
+    catt
+    fortune
   ];
 }

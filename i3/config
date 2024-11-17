@@ -91,7 +91,7 @@ bindsym $mod+m exec spotify
 #bindsym $mod+n exec journal
 bindsym $mod+n exec --no-startup-id emacsclient -c -a "" -e "(progn (org-roam-dailies-goto-today) (when (featurep 'display-line-numbers) (display-line-numbers-mode -1)) (goto-char (point-max)) (unless (or (bolp) (looking-back \\\"\\n\\n\\\" nil)) (insert \\\"\\n\\\")) (insert \\\"\\n\\\") (when (fboundp 'evil-insert-state) (evil-insert-state)))"
 bindsym $mod+shift+n exec --no-startup-id emacsclient -c -a "" /home/oscar/Mimisbrunnr/Notes/Journal/journal.org
-# bindsym $mod+c exec emacsgpt
+bindsym $mod+c exec emacsclient -c -e '(chatgpt-shell)'
 bindsym $mod+o exec alacritty -e ranger
 bindsym $mod+shift+o exec chromium --profile-directory="ORUI" --app=http://127.0.0.1:35901
 bindsym $mod+x exec sleep 5 && xset dpms force off
