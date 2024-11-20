@@ -32,7 +32,7 @@ in
     ".config/i3/lockscreen.sh".source = ./i3/lockscreen.sh;
     ".config/i3/monitors.sh".source = ./i3/monitors.sh;
     ".config/i3/burpcheck.sh".source = ./i3/burpcheck.sh;
-    ".config/i3/chains.png".source = ./i3/chains.png;
+    ".config/i3/redacted.png".source = ./i3/redacted.png;
     ".config/i3/alternating_layouts.py".source = ./i3/alternating_layouts.py;
     ".config/i3/wall.png".source = ./i3/wall.png;
     ".config/polybar/config.ini".source = ./polybar/config.ini;

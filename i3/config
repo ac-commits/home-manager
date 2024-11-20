@@ -78,6 +78,9 @@ exec --no-startup-id export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch echo $DBUS_SE
 # Automatically check display setup
 exec_always --no-startup-id autorandr -c
 
+# Disable screensaver
+exec --no-startup-id xset s off -dpms
+
 # Custom keybindings
 bindsym $mod+Shift+c exec i3-msg reload
 bindsym $mod+Shift+r exec i3-msg restart
