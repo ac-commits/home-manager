@@ -12,7 +12,7 @@
 
   networking.hostName = "sleipnir";
   networking.networkmanager.enable = true; # Enable NetworkManager for easy network management
-  networking.firewall.allowedUDPPorts = [ 5353 8000 1953 ];
+  networking.firewall.allowedUDPPorts = [ 8000 ];
 
   # Laptop battery setup
   services.system76-scheduler.settings.cfsProfiles.enable = true;

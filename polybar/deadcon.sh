@@ -11,7 +11,7 @@ for file in ~/Mimisbrunnr/Notes/Journal/*; do
 done
 
 if [ ${#numbers[@]} -eq 0 ]; then
-  echo "No numbers found."
+  echo "%{F#000000 B#1AA7EC}  DEADCON 5  %{F- B-}"
   exit 1
 fi
 

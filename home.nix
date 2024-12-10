@@ -98,7 +98,6 @@ in
     signal-desktop
     networkmanagerapplet
     zotero
-    tor-browser-bundle-bin
     autorandr
     remmina
     brightnessctl
@@ -108,7 +107,7 @@ in
     mpv
     killall
     burpsuite
-    catt
     fortune
+    prismlauncher
   ];
 }
