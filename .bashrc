@@ -56,4 +56,4 @@ virtenv() {
 # fortune mechanicus
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
-fortune ~/.config/home-manager/based.fortune
+fortune ~/.config/home-manager/readwise.fortune | fold -s -w 50 | sed 's/^/\x1b[38;5;243m/;s/$/\x1b[0m/' && printf "\n"

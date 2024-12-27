@@ -16,6 +16,7 @@ in
 
   imports = [
     ./firefox.nix
+    ./readwise.nix
   ];
 
   # Allow unfree packages
@@ -109,5 +110,8 @@ in
     burpsuite
     fortune
     prismlauncher
+    jq
+    nmap
+    discord
   ];
 }

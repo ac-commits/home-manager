@@ -69,8 +69,19 @@ in
           # Set DuckDuckGo as the default search engine
           "browser.search.defaultenginename" = { Value = "DuckDuckGo"; Status = "locked"; };
 
-          # Set homepage to about:blank
-          "browser.startup.homepage" = { Value = "about:blank"; Status = "locked"; };
+          # Set homepage to a custom local HTML file
+          "browser.startup.homepage" = { Value = "file:///home/oscar/.config/home-manager/homepage/homepage.html"; Status = "locked"; };
+
+          # Set new tab page to match the homepage
+          "browser.newtabpage.enabled" = lock-true;
+          "browser.newtabpage.activity-stream.default.sites" = {
+            Value = "file:///home/oscar/.config/home-manager/homepage/homepage.html";
+            Status = "locked";
+          };
+          "browser.newtabpage.activity-stream.aboutHome.override" = {
+            Value = "file:///home/oscar/.config/home-manager/homepage/homepage.html";
+            Status = "locked";
+          };
 
           # Privacy and security settings
           "privacy.history.custom" = lock-true;
