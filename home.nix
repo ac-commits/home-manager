@@ -42,6 +42,7 @@ in
     ".config/polybar/promodoro_duration.sh".source = ./polybar/promodoro_duration.sh;
     ".config/polybar/spotify_status.py".source = ./polybar/spotify_status.py;
     ".config/polybar/tun_script.sh".source = ./polybar/tun_script.sh;
+    ".config/polybar/countdown.sh".source = ./polybar/countdown.sh;
     ".config/ranger/commands_full.py".source = ./ranger/commands_full.py;
     ".config/ranger/commands.py".source = ./ranger/commands.py;
     ".config/ranger/rc.conf".source = ./ranger/rc.conf;

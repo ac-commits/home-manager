@@ -1,6 +1,10 @@
 # Modifier key
 set $mod Mod4
 
+# Locale fix voor emacs journal
+#export LANG=en_US.UTF-8
+#export LC_TIME=en_US.UTF-8
+
 # Font for window titles.
 font pango:monospace 8
 
