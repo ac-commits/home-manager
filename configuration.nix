@@ -10,7 +10,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "sleipnir";
+  networking.hostName = "mimr";
   networking.networkmanager.enable = true; # Enable NetworkManager for easy network management
   # networking.firewall.allowedUDPPorts = [ 8096 ];
   # networking.firewall.allowedTCPPorts = [ 8096 ];
@@ -49,14 +49,11 @@
     dnsovertls = "true";
   };
 
-  # VPN settings
-  services.mullvad-vpn.enable = true;
-
   # Laptop lid settings
   services.logind = {
     lidSwitch = "suspend";
     lidSwitchDocked = "ignore";
-    powerKey = "poweroff";
+    powerKey = "ignore";
     suspendKey = "suspend";
     hibernateKey = "hibernate";
   };
@@ -73,8 +70,8 @@
   };
 
   # Pulseaudio setup
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
+  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.support32Bit = false;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -113,7 +110,7 @@
   };
 
   # Define users
-  users.users.oscar = {
+  users.users.alex = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "audio" "docker" ];
   };
@@ -128,7 +125,7 @@
   ];
 
   # Enable autologin for convenience (if desired)
-  services.displayManager.autoLogin.user = "oscar";
+  services.displayManager.autoLogin.user = "alex";
 
   # Gnome keyring onzin
   services.gnome.gnome-keyring.enable = true;

@@ -10,13 +10,12 @@ let
 in
 
 {
-  home.username = "oscar";
-  home.homeDirectory = "/home/oscar";
-  home.stateVersion = "24.05";
+  home.username = "alex";
+  home.homeDirectory = "/home/alex";
+  home.stateVersion = "24.11";
 
   imports = [
     ./firefox.nix
-    ./readwise.nix
   ];
 
   # Allow unfree packages
@@ -75,7 +74,6 @@ in
     okular
     clang
     gnupg
-    spotify
     hunspell
     hunspellDicts.nl_NL
     hunspellDicts.en_US
@@ -84,13 +82,11 @@ in
     nix-direnv
     pulseaudio
     pavucontrol
-    nextcloud-client
     emacs-all-the-icons-fonts
     fzf
     termdown
     arandr
     networkmanager
-    libreoffice
     noto-fonts
     chromium
     xclip
@@ -110,7 +106,6 @@ in
     killall
     burpsuite
     fortune
-    prismlauncher
     jq
     nmap
     discord

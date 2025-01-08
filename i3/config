@@ -74,7 +74,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Polybar (aesthetic bar at the top, requires external program and configuration)
-exec_always --no-startup-id bash /home/oscar/.config/polybar/launch.sh
+exec_always --no-startup-id bash /home/alex/.config/polybar/launch.sh
 
 # Firefox session bus fix
 exec --no-startup-id export DBUS_SESSION_BUS_ADDRESS=$(dbus-launch echo $DBUS_SESSION_BUS_ADDRESS)
@@ -97,7 +97,7 @@ bindsym $mod+m exec spotify
 # bindsym $mod+control+shift+m exec /bin/rofi-radio-draupnir
 #bindsym $mod+n exec journal
 bindsym $mod+n exec --no-startup-id emacsclient -c -a "" -e "(progn (org-roam-dailies-goto-today) (when (featurep 'display-line-numbers) (display-line-numbers-mode -1)) (goto-char (point-max)) (unless (or (bolp) (looking-back \\\"\\n\\n\\\" nil)) (insert \\\"\\n\\\")) (insert \\\"\\n\\\") (when (fboundp 'evil-insert-state) (evil-insert-state)))"
-bindsym $mod+shift+n exec --no-startup-id emacsclient -c -a "" /home/oscar/Mimisbrunnr/Notes/Journal/journal.org
+bindsym $mod+shift+n exec --no-startup-id emacsclient -c -a "" /home/alex/Mimisbrunnr/Notes/Journal/journal.org
 bindsym $mod+c exec emacsclient -c -e '(chatgpt-shell)'
 bindsym $mod+o exec alacritty -e ranger
 bindsym $mod+shift+o exec chromium --profile-directory="ORUI" --app=http://127.0.0.1:35901

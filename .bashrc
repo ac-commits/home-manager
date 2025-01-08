@@ -33,7 +33,6 @@ alias ns="notesearch"
 alias fns="fnotesearch"
 alias src="source bin/activate"
 alias em='emacsclient -t'
-alias vim='emacsclient -t'
 #alias nano='emacsclient -t'
 alias htbvpn='sudo openvpn /home/oscar/Mimisbrunnr/Projects/HTB/Dedicated_Lab_Protocol2.ovpn'
 alias proj='cd ~/Mimisbrunnr/Projects'
