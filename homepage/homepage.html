@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L1NK5</title>
     <style>
+        :root{
+            --ha:#18bcf2;
+            --hackergreen: #41FF00;
+            --mealie:#e58325;
+            --novi: #da6b32;
+            --geenlink: #ff33a9;
+        }
         body {
             background-color: black;
-            color: red;
+            color: var(--hackergreen);
             font-family: "Courier New", Courier, monospace;
             text-align: center;
             padding: 20px;
@@ -20,18 +27,26 @@
         }
 
         a {
-            color: red;
+            color: var(--mealie);
             text-decoration: none;
             font-size: 1.5rem;
             display: block;
             margin: 10px 0;
             transition: color 0.3s;
         }
-
-        a:hover {
-            color: white;
+        a.ha {
+            color: var(--ha);
+            font-size: 2rem;
+            display: block;
+            margin: .75rem;
+            transition: color 0.3s;
         }
-
+        a:hover {
+            color: var(--hackergreen);
+        }
+        a.evil:hover {
+            color: var(--geenlink);
+        }
         .emoji {
             margin-right: 10px;
         }
@@ -55,17 +70,14 @@
 <body>
     <h1>L1NK5</h1>
 
-    <a href="https://mimisbrunnr.nl" target="_blank">
-        <span class="emoji">🌲👁️‍🗨️ </span> Mimisbrunnr
+    <!-- <a href="https://mimisbrunnr.nl" target="_blank"> -->
+    <!--     <span class="emoji">🌲👁️‍🗨️ </span> Mimisbrunnr -->
+    </a>
+    <a href="https://jarvis151.duckdns.org:8373" class="ha" target="_blank">
+        <img src="ha.ico" width="40" height="40"> Home is where your heart is
     </a>
     <a href="https://chat.openai.com" target="_blank">
         <span class="emoji">🤖✨ </span> ChatGPT
-    </a>
-    <a href="https://read.readwise.io" target="_blank">
-        <span class="emoji">📖✨ </span> Readwise Reader
-    </a>
-    <a href="https://readwise.io/dashboard" target="_blank">
-        <span class="emoji">📚✨ </span> Readwise
     </a>
     <a href="https://enterprise.hackthebox.com" target="_blank">
         <span class="emoji">💻⚗️ </span> HTB Enterprise
@@ -76,19 +88,19 @@
     <a href="https://account.proton.me/mail" target="_blank">
         <span class="emoji">⚛️✉️ </span> Proton Mail
     </a>
-    <a href="https://thepiratebay.org" target="_blank">
+    <a href="https://thepiratebay.org" class="evil" target="_blank">
         <span class="emoji">☠️‍📥️ </span> Niet de Piratebay
     </a>
-    <a href="https://libgen.st" target="_blank">
+    <a href="https://libgen.st" class="evil" target="_blank">
         <span class="emoji">📕📥 </span> Niet Library Genesis
     </a>
 
     <div class="gif-container">
-        <img src="file:///home/oscar/.config/home-manager/homepage/skull.gif" alt="Hackerskull">
+        <img src="file:///home/alex/.config/home-manager/homepage/skull.gif" alt="Hackerskull">
     </div>
 
     <footer>
-        OCC &copy; 2024
+        AC &copy; 2025
     </footer>
 </body>
 </html>

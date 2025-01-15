@@ -63,7 +63,7 @@ in
 
         /* ---- PREFERENCES ---- */
         Preferences = {
-          "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
+          "browser.contentblocking.category" = { Value = "standard"; Status = "locked"; };
           "signon.rememberSignons" = lock-false; # Disable password prompts
 
           # Set DuckDuckGo as the default search engine
