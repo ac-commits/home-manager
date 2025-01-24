@@ -1,6 +1,7 @@
 # Modifier key
 set $mod Mod4
-
+#Flameshot
+bindsym Print exec --no-startup-id flameshot gui
 # Locale fix voor emacs journal
 #export LANG=en_US.UTF-8
 #export LC_TIME=en_US.UTF-8
