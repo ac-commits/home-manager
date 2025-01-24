@@ -25,6 +25,11 @@
             font-size: 3rem;
             margin-bottom: 50px;
         }
+        h1.novi {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: var(--novi);
+        }
 
         a {
             color: var(--mealie);
@@ -32,20 +37,31 @@
             font-size: 1.5rem;
             display: block;
             margin: 10px 0;
-            transition: color 0.3s;
+            transition: color 0.8s;
         }
         a.ha {
             color: var(--ha);
             font-size: 2rem;
             display: block;
             margin: .75rem;
-            transition: color 0.3s;
+            transition: color 0.8s;
+        }
+        a.novi {
+            color: var(--hackergreen);
+            font-size: 2rem;
+            display: block;
+            margin: .75rem;
+            transition: color 0.8s;
         }
         a:hover {
             color: var(--hackergreen);
         }
         a.evil:hover {
             color: var(--geenlink);
+        }
+        a.novi:hover {
+            /* background-image: linear-gradient(to right, var(--novi), var(--geenlink)); */
+            color: var(--novi);
         }
         .emoji {
             margin-right: 10px;
@@ -76,6 +92,9 @@
     <a href="https://jarvis151.duckdns.org:8373" class="ha" target="_blank">
         <img src="ha.ico" width="40" height="40"> Home is where your heart is
     </a>
+    <a href="https://dash.cloudflare.com/login" target="_blank">
+        <span class="emoji">🌬🧨 </span> Cloudflare dashcam
+    </a>
     <a href="https://chat.openai.com" target="_blank">
         <span class="emoji">🤖✨ </span> ChatGPT
     </a>
@@ -98,6 +117,11 @@
     <div class="gif-container">
         <img src="file:///home/alex/.config/home-manager/homepage/skull.gif" alt="Hackerskull">
     </div>
+
+    <h1 class="novi">N0v1</h1>
+    <a href="https://share.arjenwiersma.nl/s/KrDQt8wFcKPtNpg" class="novi" target="blank">
+        <span class"emoji">💾👨🏼‍🎓</span> Novi download labisch
+    </a>
 
     <footer>
         AC &copy; 2025
