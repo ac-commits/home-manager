@@ -109,5 +109,6 @@ in
     jq
     nmap
     discord
+    gpt4all-cuda
   ];
 }
