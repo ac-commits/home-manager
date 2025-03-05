@@ -90,7 +90,7 @@ exec --no-startup-id xset s off -dpms
 bindsym $mod+Shift+c exec i3-msg reload
 bindsym $mod+Shift+r exec i3-msg restart
 bindsym $mod+e exec emacsclient -c
-bindsym $mod+shift+control+e exec killall emacs-29.4 && emacs-29.4 --bg-daemon
+bindsym $mod+shift+control+e exec killall emacs-30.1 && emacs-30.1 --bg-daemon
 bindsym $mod+b exec firefox -P "default" -new-window
 # bindsym $mod+shift+b exec firefox -P "Hacker" -new-window
 bindsym $mod+m exec spotify
