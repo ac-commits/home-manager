@@ -67,7 +67,7 @@ in
     ranger
     rofi
     nerdfonts
-    emacs29
+    emacs30
     git
     ripgrep
     fd
